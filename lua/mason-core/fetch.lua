@@ -97,7 +97,7 @@ local function fetch(url, opts)
         )
         return spawn.curl {
             headers,
-            "-fsSL",
+            "-fsSLk",
             {
                 "-X",
                 opts.method,
